@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026F518D20363031007FB0E7 /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F518C20363031007FB0E7 /* TrackModel.swift */; };
+		026F518F2036324F007FB0E7 /* TrackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F518E2036324F007FB0E7 /* TrackViewModel.swift */; };
+		026F519120363323007FB0E7 /* PlaylistTracksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F519020363323007FB0E7 /* PlaylistTracksService.swift */; };
+		026F51932036374E007FB0E7 /* PlaylistTracksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F51922036374D007FB0E7 /* PlaylistTracksViewModel.swift */; };
+		026F519520363839007FB0E7 /* PlaylistTracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F519420363839007FB0E7 /* PlaylistTracksViewController.swift */; };
+		026F5197203639EC007FB0E7 /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F5196203639EC007FB0E7 /* TrackTableViewCell.swift */; };
+		026F519A20363BBF007FB0E7 /* PlaylistTracksTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F519920363BBF007FB0E7 /* PlaylistTracksTableViewHeader.swift */; };
 		02C262ED2035CF1D00F11959 /* DeezerPOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C262EC2035CF1D00F11959 /* DeezerPOCTests.swift */; };
 		02C262F82035CF1D00F11959 /* DeezerPOCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C262F72035CF1D00F11959 /* DeezerPOCUITests.swift */; };
 		02C2630E2035CFC100F11959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C263062035CFC100F11959 /* AppDelegate.swift */; };
@@ -45,6 +52,13 @@
 
 /* Begin PBXFileReference section */
 		023FF4B6C2A81460843ADECE /* Pods_DeezerPOCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeezerPOCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		026F518C20363031007FB0E7 /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
+		026F518E2036324F007FB0E7 /* TrackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewModel.swift; sourceTree = "<group>"; };
+		026F519020363323007FB0E7 /* PlaylistTracksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTracksService.swift; sourceTree = "<group>"; };
+		026F51922036374D007FB0E7 /* PlaylistTracksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTracksViewModel.swift; sourceTree = "<group>"; };
+		026F519420363839007FB0E7 /* PlaylistTracksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTracksViewController.swift; sourceTree = "<group>"; };
+		026F5196203639EC007FB0E7 /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
+		026F519920363BBF007FB0E7 /* PlaylistTracksTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTracksTableViewHeader.swift; sourceTree = "<group>"; };
 		02C262D42035CF1D00F11959 /* DeezerPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeezerPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C262E82035CF1D00F11959 /* DeezerPOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeezerPOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C262EC2035CF1D00F11959 /* DeezerPOCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeezerPOCTests.swift; sourceTree = "<group>"; };
@@ -103,6 +117,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		026F519820363BA5007FB0E7 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				026F519920363BBF007FB0E7 /* PlaylistTracksTableViewHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		02C262CB2035CF1D00F11959 = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				02C2631D2035D83700F11959 /* PlaylistModel.swift */,
+				026F518C20363031007FB0E7 /* TrackModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				02C263202035E13800F11959 /* UserPlaylistsService.swift */,
+				026F519020363323007FB0E7 /* PlaylistTracksService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -198,6 +222,8 @@
 			children = (
 				02C263252035E54400F11959 /* UserPlaylistsViewModel.swift */,
 				02C263272035EB3600F11959 /* PlaylistViewModel.swift */,
+				026F51922036374D007FB0E7 /* PlaylistTracksViewModel.swift */,
+				026F518E2036324F007FB0E7 /* TrackViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -206,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				02C2632C2035F1D900F11959 /* UserPlaylistsViewController.swift */,
+				026F519420363839007FB0E7 /* PlaylistTracksViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -214,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				02C263322035FFA500F11959 /* Layout */,
+				026F519820363BA5007FB0E7 /* Header */,
 				02C263332035FFAC00F11959 /* Cells */,
 			);
 			path = Views;
@@ -239,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				02C2632E2035F9A900F11959 /* PlaylistCollectionViewCell.swift */,
+				026F5196203639EC007FB0E7 /* TrackTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -565,13 +594,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026F519520363839007FB0E7 /* PlaylistTracksViewController.swift in Sources */,
+				026F51932036374E007FB0E7 /* PlaylistTracksViewModel.swift in Sources */,
 				02C263312035FF9E00F11959 /* FixedColumnsSquareCollectionViewLayout.swift in Sources */,
 				02C2632F2035F9A900F11959 /* PlaylistCollectionViewCell.swift in Sources */,
+				026F519A20363BBF007FB0E7 /* PlaylistTracksTableViewHeader.swift in Sources */,
 				02C2632B2035ED7600F11959 /* DurationFormatter.swift in Sources */,
+				026F518D20363031007FB0E7 /* TrackModel.swift in Sources */,
 				02C2631E2035D83700F11959 /* PlaylistModel.swift in Sources */,
 				02C263212035E13800F11959 /* UserPlaylistsService.swift in Sources */,
+				026F518F2036324F007FB0E7 /* TrackViewModel.swift in Sources */,
 				02C263282035EB3600F11959 /* PlaylistViewModel.swift in Sources */,
+				026F5197203639EC007FB0E7 /* TrackTableViewCell.swift in Sources */,
 				02C263262035E54400F11959 /* UserPlaylistsViewModel.swift in Sources */,
+				026F519120363323007FB0E7 /* PlaylistTracksService.swift in Sources */,
 				02C2630E2035CFC100F11959 /* AppDelegate.swift in Sources */,
 				02C2632D2035F1D900F11959 /* UserPlaylistsViewController.swift in Sources */,
 			);

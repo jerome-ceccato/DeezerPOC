@@ -11,21 +11,27 @@ import RxSwift
 
 protocol PlaylistViewModelType {
     var title: Variable<String> { get }
-    var formattedDuration: Variable<String> { get }
-    var author: Variable<String> { get }
+    var subtitle: Variable<String> { get }
     var pictureURL: Variable<URL> { get }
+    
+    var trackList: PlaylistTracksViewModelType { get }
 }
 
 final class PlaylistViewModel: PlaylistViewModelType {
     var title: Variable<String>
-    var formattedDuration: Variable<String>
-    var author: Variable<String>
+    var subtitle: Variable<String>
     var pictureURL: Variable<URL>
+    
+    var trackList: PlaylistTracksViewModelType
     
     init(playlist: PlaylistModelType, durationFormatter: DurationFormatterType = DurationFormatter.shared) {
         self.title = Variable(playlist.title)
-        self.author = Variable(playlist.author)
         self.pictureURL = Variable(playlist.pictureURL)
-        self.formattedDuration = Variable(durationFormatter.string(from: playlist.duration))
+        
+        let author = playlist.author
+        let formattedDuration = durationFormatter.string(from: playlist.duration)
+        self.subtitle = Variable("\(author) - \(formattedDuration)")
+        
+        trackList = PlaylistTracksViewModel(service: PlaylistTracksService(playlist: playlist))
     }
 }

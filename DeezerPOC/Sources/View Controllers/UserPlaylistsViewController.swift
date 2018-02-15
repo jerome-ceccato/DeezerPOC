@@ -97,11 +97,14 @@ private extension UserPlaylistsViewController {
 extension UserPlaylistsViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
+        
+        let nextController = PlaylistTracksViewController.instanciate(viewModel: viewModel.playlists.value[indexPath.item])
+        navigationController?.pushViewController(nextController, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         if canLoadMore {
-            if indexPath.row >= (collectionView.numberOfItems(inSection: indexPath.section) - 1) {
+            if indexPath.item >= (collectionView.numberOfItems(inSection: indexPath.section) - 1) {
                 loadMoreData()
             }
         }
@@ -121,7 +124,7 @@ extension UserPlaylistsViewController: UICollectionViewDataSource {
         let identifier = "PlaylistCollectionViewCell"
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: identifier, for: indexPath) as! PlaylistCollectionViewCell
 
-        cell.viewModel = viewModel.playlists.value[indexPath.row]
+        cell.viewModel = viewModel.playlists.value[indexPath.item]
         
         return cell
     }

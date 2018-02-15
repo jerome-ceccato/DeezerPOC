@@ -14,6 +14,8 @@ protocol PlaylistModelType {
     var duration: TimeInterval { get }
     var author: String { get }
     var pictureURL: URL { get }
+    
+    var tracklistURL: URL { get }
 }
 
 struct PlaylistModel: PlaylistModelType {
@@ -21,13 +23,15 @@ struct PlaylistModel: PlaylistModelType {
     var duration: TimeInterval
     var author: String
     var pictureURL: URL
+    var tracklistURL: URL
     
     init?(json: JSON) {
         guard
             let title = json["title"].string,
             let duration = json["duration"].double.flatMap(TimeInterval.init),
             let author = json["creator"]["name"].string,
-            let pictureURL = json["picture_medium"].url
+            let pictureURL = json["picture_medium"].url,
+            let tracklistURL = json["tracklist"].url
             else {
                 return nil
         }
@@ -36,5 +40,6 @@ struct PlaylistModel: PlaylistModelType {
         self.duration = duration
         self.author = author
         self.pictureURL = pictureURL
+        self.tracklistURL = tracklistURL
     }
 }
