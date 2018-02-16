@@ -45,12 +45,12 @@ final class PlaylistTracksViewModel: PlaylistTracksViewModelType {
                 
                 var items = self.tracks.value
                 items.append(contentsOf: newViewModels)
-                self.tracks.value = items;
+                self.tracks.value = items
                 
                 subject.onNext(newViewModels)
                 
-                }, onError: { error in
-                    subject.onError(error)
+            }, onError: { error in
+                subject.onError(error)
                     
             }, onCompleted: { [unowned self] in
                 self.isLoading.value = false

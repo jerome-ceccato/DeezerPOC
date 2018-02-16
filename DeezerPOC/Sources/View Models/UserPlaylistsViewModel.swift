@@ -45,7 +45,7 @@ final class UserPlaylistsViewModel: UserPlaylistsViewModelType {
                 
                 var items = self.playlists.value
                 items.append(contentsOf: newViewModels)
-                self.playlists.value = items;
+                self.playlists.value = items
                 
                 subject.onNext(newViewModels)
                 
