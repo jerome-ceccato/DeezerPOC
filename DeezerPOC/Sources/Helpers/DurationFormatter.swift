@@ -24,6 +24,14 @@ final class DurationFormatter: DurationFormatterType {
     }
     
     func string(from duration: TimeInterval) -> String {
-        return formatter.string(from: duration) ?? "-"
+        if duration >= 0, let formattedDuration = formatter.string(from: duration) {
+            // Our format is HH:mm:ss so we always want (at least) 2 digits for each unit
+            // Apple's formatter does not work in the intended and documented way so we add the leading 0 if needed
+            if formattedDuration.count == "H:mm:ss".count {
+                return "0" + formattedDuration
+            }
+            return formattedDuration
+        }
+        return "-"
     }
 }

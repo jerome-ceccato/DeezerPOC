@@ -14,7 +14,10 @@
 		026F519520363839007FB0E7 /* PlaylistTracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F519420363839007FB0E7 /* PlaylistTracksViewController.swift */; };
 		026F5197203639EC007FB0E7 /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F5196203639EC007FB0E7 /* TrackTableViewCell.swift */; };
 		026F519A20363BBF007FB0E7 /* PlaylistTracksTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F519920363BBF007FB0E7 /* PlaylistTracksTableViewHeader.swift */; };
-		02C262ED2035CF1D00F11959 /* DeezerPOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C262EC2035CF1D00F11959 /* DeezerPOCTests.swift */; };
+		02ACB8822036EDC40021CFA2 /* DurationFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACB8812036EDC40021CFA2 /* DurationFormatterTests.swift */; };
+		02ACB8852036F30D0021CFA2 /* UserPlaylistsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACB8842036F30D0021CFA2 /* UserPlaylistsViewModelTests.swift */; };
+		02ACB8882036F3990021CFA2 /* UserPlaylistServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACB8872036F3990021CFA2 /* UserPlaylistServiceMock.swift */; };
+		02ACB88A2036F6670021CFA2 /* PlaylistModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACB8892036F6670021CFA2 /* PlaylistModelMock.swift */; };
 		02C262F82035CF1D00F11959 /* DeezerPOCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C262F72035CF1D00F11959 /* DeezerPOCUITests.swift */; };
 		02C2630E2035CFC100F11959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C263062035CFC100F11959 /* AppDelegate.swift */; };
 		02C263102035CFC100F11959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C263092035CFC100F11959 /* Assets.xcassets */; };
@@ -59,9 +62,12 @@
 		026F519420363839007FB0E7 /* PlaylistTracksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTracksViewController.swift; sourceTree = "<group>"; };
 		026F5196203639EC007FB0E7 /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
 		026F519920363BBF007FB0E7 /* PlaylistTracksTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTracksTableViewHeader.swift; sourceTree = "<group>"; };
+		02ACB8812036EDC40021CFA2 /* DurationFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationFormatterTests.swift; sourceTree = "<group>"; };
+		02ACB8842036F30D0021CFA2 /* UserPlaylistsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPlaylistsViewModelTests.swift; sourceTree = "<group>"; };
+		02ACB8872036F3990021CFA2 /* UserPlaylistServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPlaylistServiceMock.swift; sourceTree = "<group>"; };
+		02ACB8892036F6670021CFA2 /* PlaylistModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistModelMock.swift; sourceTree = "<group>"; };
 		02C262D42035CF1D00F11959 /* DeezerPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeezerPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C262E82035CF1D00F11959 /* DeezerPOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeezerPOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		02C262EC2035CF1D00F11959 /* DeezerPOCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeezerPOCTests.swift; sourceTree = "<group>"; };
 		02C262EE2035CF1D00F11959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02C262F32035CF1D00F11959 /* DeezerPOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeezerPOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C262F72035CF1D00F11959 /* DeezerPOCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeezerPOCUITests.swift; sourceTree = "<group>"; };
@@ -125,6 +131,23 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		02ACB8832036F2E40021CFA2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				02ACB8842036F30D0021CFA2 /* UserPlaylistsViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		02ACB8862036F37A0021CFA2 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				02ACB8892036F6670021CFA2 /* PlaylistModelMock.swift */,
+				02ACB8872036F3990021CFA2 /* UserPlaylistServiceMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		02C262CB2035CF1D00F11959 = {
 			isa = PBXGroup;
 			children = (
@@ -160,8 +183,10 @@
 		02C262EB2035CF1D00F11959 /* DeezerPOCTests */ = {
 			isa = PBXGroup;
 			children = (
-				02C262EC2035CF1D00F11959 /* DeezerPOCTests.swift */,
 				02C262EE2035CF1D00F11959 /* Info.plist */,
+				02ACB8862036F37A0021CFA2 /* Mocks */,
+				02ACB8832036F2E40021CFA2 /* ViewModels */,
+				02ACB8812036EDC40021CFA2 /* DurationFormatterTests.swift */,
 			);
 			path = DeezerPOCTests;
 			sourceTree = "<group>";
@@ -617,7 +642,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02C262ED2035CF1D00F11959 /* DeezerPOCTests.swift in Sources */,
+				02ACB8822036EDC40021CFA2 /* DurationFormatterTests.swift in Sources */,
+				02ACB8882036F3990021CFA2 /* UserPlaylistServiceMock.swift in Sources */,
+				02ACB8852036F30D0021CFA2 /* UserPlaylistsViewModelTests.swift in Sources */,
+				02ACB88A2036F6670021CFA2 /* PlaylistModelMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
