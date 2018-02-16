@@ -18,6 +18,9 @@
 		02ACB8852036F30D0021CFA2 /* UserPlaylistsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACB8842036F30D0021CFA2 /* UserPlaylistsViewModelTests.swift */; };
 		02ACB8882036F3990021CFA2 /* UserPlaylistServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACB8872036F3990021CFA2 /* UserPlaylistServiceMock.swift */; };
 		02ACB88A2036F6670021CFA2 /* PlaylistModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACB8892036F6670021CFA2 /* PlaylistModelMock.swift */; };
+		02ACB88C20371C5D0021CFA2 /* PlaylistTracksViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACB88B20371C5D0021CFA2 /* PlaylistTracksViewModelTests.swift */; };
+		02ACB88E20371CC80021CFA2 /* PlaylistTracksServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACB88D20371CC80021CFA2 /* PlaylistTracksServiceMock.swift */; };
+		02ACB89020371D1E0021CFA2 /* TrackModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ACB88F20371D1E0021CFA2 /* TrackModelMock.swift */; };
 		02C262F82035CF1D00F11959 /* DeezerPOCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C262F72035CF1D00F11959 /* DeezerPOCUITests.swift */; };
 		02C2630E2035CFC100F11959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C263062035CFC100F11959 /* AppDelegate.swift */; };
 		02C263102035CFC100F11959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02C263092035CFC100F11959 /* Assets.xcassets */; };
@@ -66,6 +69,9 @@
 		02ACB8842036F30D0021CFA2 /* UserPlaylistsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPlaylistsViewModelTests.swift; sourceTree = "<group>"; };
 		02ACB8872036F3990021CFA2 /* UserPlaylistServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPlaylistServiceMock.swift; sourceTree = "<group>"; };
 		02ACB8892036F6670021CFA2 /* PlaylistModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistModelMock.swift; sourceTree = "<group>"; };
+		02ACB88B20371C5D0021CFA2 /* PlaylistTracksViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTracksViewModelTests.swift; sourceTree = "<group>"; };
+		02ACB88D20371CC80021CFA2 /* PlaylistTracksServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTracksServiceMock.swift; sourceTree = "<group>"; };
+		02ACB88F20371D1E0021CFA2 /* TrackModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModelMock.swift; sourceTree = "<group>"; };
 		02C262D42035CF1D00F11959 /* DeezerPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeezerPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C262E82035CF1D00F11959 /* DeezerPOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeezerPOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C262EE2035CF1D00F11959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				02ACB8842036F30D0021CFA2 /* UserPlaylistsViewModelTests.swift */,
+				02ACB88B20371C5D0021CFA2 /* PlaylistTracksViewModelTests.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -144,6 +151,8 @@
 			children = (
 				02ACB8892036F6670021CFA2 /* PlaylistModelMock.swift */,
 				02ACB8872036F3990021CFA2 /* UserPlaylistServiceMock.swift */,
+				02ACB88F20371D1E0021CFA2 /* TrackModelMock.swift */,
+				02ACB88D20371CC80021CFA2 /* PlaylistTracksServiceMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -645,7 +654,10 @@
 				02ACB8822036EDC40021CFA2 /* DurationFormatterTests.swift in Sources */,
 				02ACB8882036F3990021CFA2 /* UserPlaylistServiceMock.swift in Sources */,
 				02ACB8852036F30D0021CFA2 /* UserPlaylistsViewModelTests.swift in Sources */,
+				02ACB88C20371C5D0021CFA2 /* PlaylistTracksViewModelTests.swift in Sources */,
 				02ACB88A2036F6670021CFA2 /* PlaylistModelMock.swift in Sources */,
+				02ACB89020371D1E0021CFA2 /* TrackModelMock.swift in Sources */,
+				02ACB88E20371CC80021CFA2 /* PlaylistTracksServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
